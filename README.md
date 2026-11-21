@@ -1,20 +1,22 @@
-# python-automation-projects
+# API to Excel Report Generator
 
-Hi, I'm Arpit Bubna, a Python and DevOps automation engineer with
-4 years of experience and a Master's in Electrical (Control and Power System).
+Pulls 7 days of hourly weather and solar data from the free Open-Meteo API,
+cleans it with pandas, and creates a formatted Excel report with a summary
+sheet and a chart.
 
-## What I build
-- Excel/PDF report automation (pandas, openpyxl)
-- API integrations (requests)
-- Web automation (Selenium)
-- CI/CD pipelines (Jenkins, GitHub)
-- Linux scripting and VM setup (VirtualBox/Vagrant, YAML/JSON)
+## Run
+pip install -r requirements.txt
+python main.py
 
-## Projects (coming soon)
-1. API to Excel report generator
-2. Selenium data collector
-3. Jenkins scheduled automation pipeline
+## Configure
+Edit config.yaml (city, coordinates, number of days, output file name).
 
-## Contact
-LinkedIn: www.linkedin.com/in/arpit-bubna
+## Output
+weather_report.xlsx with a Raw Data sheet, a Summary sheet, and a chart.
 
+## Tests
+python -m unittest test_main.py -v
+
+
+## Tech
+Python, requests, pandas, openpyxl, YAML

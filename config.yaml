@@ -1,0 +1,6 @@
+city: Ghaziabad
+latitude: 28.67
+longitude: 77.45
+timezone: Asia/Kolkata
+days: 7
+output_file: weather_report.xlsx
